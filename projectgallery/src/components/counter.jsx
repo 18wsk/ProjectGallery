@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 
-export const Counter = () => {
+export default function Counter() {
     const [counter, setCounter] = useState(0);
     const urMom = 21;
 
