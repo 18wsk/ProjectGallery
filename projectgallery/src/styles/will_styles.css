@@ -1,5 +1,9 @@
 img.circleprofile {
     border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
 }
 
 div.background {
@@ -7,6 +11,7 @@ div.background {
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
+    z-index: 1
 }
 
 div.full {
@@ -45,12 +50,10 @@ div.text-section {
     padding: 4px;
 }
 
-h1.name {
-    color: black;
+.name {
+    color: white;
     font-family: 'Courier New', monospace;
     text-align: center;
-    background-color: white;
-    border: 8px solid #c603fc;
     padding: 4px;
 }
 
@@ -61,4 +64,40 @@ p {
 
 div.ineedspace {
     padding-right: 20px;
+}
+
+.tsparticles {
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+}
+
+button.linkeden {
+    background-color: #0A66C2;
+    border-radius: 100%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+button.github {
+    background-color: white; 
+    border-radius: 100%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+div.socials-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+
+div.socials-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
 }
