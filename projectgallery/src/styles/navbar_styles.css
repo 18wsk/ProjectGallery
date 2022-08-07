@@ -1,0 +1,9 @@
+div.navbar {
+    background-color: #0000;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 4rem;
+    bottom: 0px;
+    position: fixed;
+}

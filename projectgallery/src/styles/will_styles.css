@@ -1,0 +1,103 @@
+img.circleprofile {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+div.background {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1
+}
+
+div.full {
+    width: 100%;
+    height: 100%;
+}
+
+div.griddy {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    width: 100%;
+    height: auto;
+    justify-items: center;
+}
+
+div.text-griddy {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    width: 100%;
+    height: auto;
+    justify-items: center;
+}
+
+div.section {
+    justify-content: center;
+}
+
+div.text-section {
+    justify-content: center;
+    background-color: white;
+    border: 8px solid #c603fc;
+    width: 80%;
+    padding: 4px;
+}
+
+.name {
+    color: white;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    padding: 4px;
+}
+
+p {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+}
+
+div.ineedspace {
+    padding-right: 20px;
+}
+
+.tsparticles {
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+}
+
+button.linkeden {
+    background-color: #0A66C2;
+    border-radius: 100%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+button.github {
+    background-color: white; 
+    border-radius: 100%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+div.socials-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+
+div.socials-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
