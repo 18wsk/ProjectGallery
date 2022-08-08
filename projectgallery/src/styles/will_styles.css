@@ -7,11 +7,13 @@ img.circleprofile {
 }
 
 div.background {
+    position: relative;
     width: 100%;
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
-    z-index: 1
+    z-index: 1;
+    padding-top: 8rem;
 }
 
 div.full {
@@ -40,14 +42,7 @@ div.text-griddy {
 
 div.section {
     justify-content: center;
-}
-
-div.text-section {
-    justify-content: center;
-    background-color: white;
-    border: 8px solid #c603fc;
-    width: 80%;
-    padding: 4px;
+    z-index: 2;
 }
 
 .name {
@@ -60,14 +55,12 @@ div.text-section {
 p {
     font-family: 'Courier New', monospace;
     font-weight: bold;
-}
-
-div.ineedspace {
-    padding-right: 20px;
+    color: white;
+    text-align: center;
 }
 
 .tsparticles {
-    z-index: -1;
+    z-index: -4;
     position: fixed;
     width: 100%;
 }
@@ -100,4 +93,9 @@ div.socials-container {
     display: flex;
     align-items: center;
     justify-content: center;    
+}
+
+.map {
+    z-index: 30;
+    width: 700px;
 }
