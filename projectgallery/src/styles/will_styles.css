@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
 img.circleprofile {
     border-radius: 50%;
     display: block;
@@ -6,14 +10,23 @@ img.circleprofile {
     width: auto;
 }
 
-div.background {
+div.section {
     position: relative;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
     overflow-y: auto;
     overflow-x: hidden;
     z-index: 1;
-    padding-top: 8rem;
+    padding-top: 4rem;
+    scroll-snap-align: start;
+}
+
+div.container{
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
 div.full {
@@ -40,7 +53,7 @@ div.text-griddy {
     justify-items: center;
 }
 
-div.section {
+div.sub_section {
     justify-content: center;
     z-index: 2;
 }

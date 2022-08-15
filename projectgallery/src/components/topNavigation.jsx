@@ -4,22 +4,11 @@ import '../styles/navbar_styles.css'
 export default function TopNavigation() {
   return (
     <div className='navbar'>
-      <div>
-        <p>Home</p>
-      </div>
-      <div>
-        <p>About</p>
-      </div>
-      <div>
-        <p>Skills</p>
-      </div>
-      <div>
-        <p>Work</p>
-      </div>
-      <div>
-        <p>Contact</p>
-      </div>
-        
+        <a className='btn' href="#Home">Home</a>
+        <a className='btn' href="#About">About</a>
+        <a className='btn' href="#Skills">Skills</a>
+        <a className='btn' href="#Experience">Experience</a>
+        <a className='btn' href="#Contact">Contact</a>
     </div>
   )
 }
