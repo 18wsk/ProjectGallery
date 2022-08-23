@@ -5,6 +5,8 @@ import '../styles/will_styles.css'
 import BackgroundParticles from '../components/backgroundParticles';
 import { FaLinkedinIn } from 'react-icons/fa'
 import { AiFillGithub } from 'react-icons/ai';
+import queens from '../assets/queens.jpg';
+import hobbies from '../assets/hobbies.jpg';
 
 function Home() {
     
@@ -35,13 +37,20 @@ function Home() {
                 </div>
             </div>
             <div className="section" id="About">
-                <p>About</p>
+                <p className='section_title'>ABOUT</p>
+                <div className='about_images'>
+                    <img className='queens_logo' src={queens} alt="..." width="400" height="400"/>
+                    <img className='queens_logo' src={hobbies} alt="..."  width="400" height="400"/>
+                    <img className='queens_logo' src={queens} alt="..."  width="400" height="400"/>
+                </div>
             </div>
             <div className="section" id="Skills">
-                <p>Skills</p>
+                <p className='section_title'>Skills</p>
             </div>
             <div className="section" id="Experience">
-                <iframe src="https://carbongraph.io" title="W3Schools Free Online Web Tutorials"></iframe>
+            <p className='section_title'>Experience</p>
+                <div className="work_section">
+                </div>
             </div>
         </div>
         </>

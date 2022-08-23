@@ -17,7 +17,7 @@ div.section {
     overflow-y: auto;
     overflow-x: hidden;
     z-index: 1;
-    padding-top: 4rem;
+    padding-top: 2rem;
     scroll-snap-align: start;
 }
 
@@ -111,4 +111,35 @@ div.socials-container {
 .map {
     z-index: 30;
     width: 700px;
+}
+
+.work_section {
+    padding-top: 50px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-gap: 10px;
+    width: 100%;
+    height: 100%;
+    justify-items: left;
+}
+
+p.section_title {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    margin: 0;
+    padding-left: 10px;
+    font-size: 300%;
+}
+
+div.about_images {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 10px;
+    width: 100%;
+    height: 75%;
+    align-items: center;
+    justify-content: center;
 }
