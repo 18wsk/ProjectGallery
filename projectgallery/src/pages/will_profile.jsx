@@ -5,8 +5,9 @@ import '../styles/will_styles.css'
 import BackgroundParticles from '../components/backgroundParticles';
 import { FaLinkedinIn } from 'react-icons/fa'
 import { AiFillGithub } from 'react-icons/ai';
-import queens from '../assets/queens.jpg';
-import hobbies from '../assets/hobbies.jpg';
+import { BiCodeCurly } from 'react-icons/bi';
+import { IoIosSchool } from 'react-icons/io';
+import { MdOutlineSportsEsports } from 'react-icons/md'
 
 function Home() {
     
@@ -38,10 +39,42 @@ function Home() {
             </div>
             <div className="section" id="About">
                 <p className='section_title'>ABOUT</p>
-                <div className='about_images'>
-                    <img className='queens_logo' src={queens} alt="..." width="400" height="400"/>
-                    <img className='queens_logo' src={hobbies} alt="..."  width="400" height="400"/>
-                    <img className='queens_logo' src={queens} alt="..."  width="400" height="400"/>
+                <div className='about_grid'>
+                    <div className='about_section'>
+                        <button className='about_button'>
+                            <IoIosSchool color='white' size='400px' position='absolute'/>
+                            <h1 className='about_text'>Education: </h1>
+                            <p className='about_text'>
+                                Currently completing my fifth year 
+                                at Queen's University and will graduate this spring with a BASc 
+                                in Computer Engineering after successfully completing two seperate 
+                                professional internships and participating in clubs such as Queen's BAJA.
+                            </p>
+                        </button>
+                    </div>
+                    <div className='about_section'>
+                    <button className='about_button'>
+                            <BiCodeCurly color='white' size='400px' position='absolute'/>
+                            <h1 className='about_text'>Personal Interests: </h1>
+                            <p className='about_text'>
+                                My main interests revolve around physical fitness and sports such as 
+                                rugby which I have been lucky enough to have won multiple provincial medals 
+                                in. I also enjoy various forms of media including video games in which I have 
+                                also played in Competitive esports tournaments such as UPLAY sports national tournament.
+                            </p>
+                        </button>
+                    </div>
+                    <div className='about_section'>
+                    <button className='about_button'>
+                            <MdOutlineSportsEsports color='white' size='400px' position='absolute'/>
+                            <h1 className='about_text'>Why Software Development:</h1>
+                            <p className='about_text'> 
+                                I am a very passionate and driven person, I like to think outside the box. 
+                                This why I have found such an interest in programming since it is a new challenge everyday and nothing 
+                                is more rewarding that being part of a team and building a project that can leave a positive impact in peoples lives.
+                            </p>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div className="section" id="Skills">
