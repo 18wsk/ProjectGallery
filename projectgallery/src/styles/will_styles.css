@@ -116,7 +116,7 @@ div.socials-container {
 .work_section {
     padding-top: 50px;
     display: grid;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
     grid-gap: 10px;
     width: 100%;
     height: 100%;
@@ -161,7 +161,7 @@ p.section_title {
 
 div.about_section {
     width: 100%;
-    height: 75%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -199,4 +199,54 @@ img.about_image {
     color: white;
     text-align: center;
     font-family: 'Courier New', monospace;
+}
+
+.home_page {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.graph_title_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    justify-content: center;
+    z-index: 10;
+    background-color: #0000;
+}
+
+p.graph_title {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 200%;
+}
+
+div.work_images {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-gap: 16px;
+    height: 80%;
+    width: 80%;
+}
+
+div.full {
+    width: 100%;
+    height: 100%;
+}
+
+.gg {
+    display: relative;
+}
+
+.work_text {
+    color: white;
+    text-align: left;
+    z-index: 1;
+    font-size: 24px;
+    padding: 4px
 }

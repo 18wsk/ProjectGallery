@@ -8,7 +8,7 @@ export default function TopNavigation() {
         <a className='btn' href="#About">About</a>
         <a className='btn' href="#Skills">Skills</a>
         <a className='btn' href="#Experience">Experience</a>
-        <a className='btn' href="#Contact">Contact</a>
+        <a className='btn' href="/Contact">Contact</a>
     </div>
   )
 }
