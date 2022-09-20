@@ -15,6 +15,8 @@
     "react-scripts": "5.0.1",
     "react-simple-maps": "^3.0.0",
     "tsparticles": "^2.1.4",
+    "victory": "^36.6.7",
+    "victory-label": "^1.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

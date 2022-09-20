@@ -177,5 +177,26 @@ img.about_image {
     color: white;
     text-align: left;
     z-index: 1;
-    background-color: transparent;
+    background-color: black;
+}
+
+.skills_section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    width: 100%;
+    height: 75%;
+    justify-items: left;
+}
+
+.skills_sub_section {
+    width: 75%;
+    height: 100%;
+    margin: auto;
+}
+
+.skills_title {
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', monospace;
 }

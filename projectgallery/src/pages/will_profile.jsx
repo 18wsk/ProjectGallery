@@ -8,6 +8,7 @@ import { AiFillGithub } from 'react-icons/ai';
 import { BiCodeCurly } from 'react-icons/bi';
 import { IoIosSchool } from 'react-icons/io';
 import { MdOutlineSportsEsports } from 'react-icons/md'
+import { VictoryBar, VictoryChart, VictoryAxis, VictoryLabel } from "victory";
 
 function Home() {
     
@@ -54,24 +55,25 @@ function Home() {
                     </div>
                     <div className='about_section'>
                     <button className='about_button'>
-                            <BiCodeCurly color='white' size='400px' position='absolute'/>
+                            <MdOutlineSportsEsports  color='white' size='400px' position='absolute'/>
                             <h1 className='about_text'>Personal Interests: </h1>
                             <p className='about_text'>
                                 My main interests revolve around physical fitness and sports such as 
-                                rugby which I have been lucky enough to have won multiple provincial medals 
-                                in. I also enjoy various forms of media including video games in which I have 
-                                also played in Competitive esports tournaments such as UPLAY sports national tournament.
+                                rugby which I have been lucky enough to be a part of such great oranizations in highschool and club
+                                which lead me to winning multiple provincial medals. I also enjoy various forms of media including 
+                                video games in which I have also played in Competitive esports tournaments such as UPLAY sports national tournament.
                             </p>
                         </button>
                     </div>
                     <div className='about_section'>
                     <button className='about_button'>
-                            <MdOutlineSportsEsports color='white' size='400px' position='absolute'/>
+                            <BiCodeCurly color='white' size='400px' position='absolute'/>
                             <h1 className='about_text'>Why Software Development:</h1>
                             <p className='about_text'> 
-                                I am a very passionate and driven person, I like to think outside the box. 
-                                This why I have found such an interest in programming since it is a new challenge everyday and nothing 
-                                is more rewarding that being part of a team and building a project that can leave a positive impact in peoples lives.
+                                I am a very passionate and driven person who loves taking on new challenges which is why I chose software development.
+                                This field is a great opportunity for me to apply my 'outside the box' thinking as well as my creativity to my work.
+                                I hightly value the importance of teamwork and communication and find nothing more rewarding than completing a project
+                                that benifits the user or helps improve the user's lives.
                             </p>
                         </button>
                     </div>
@@ -79,6 +81,173 @@ function Home() {
             </div>
             <div className="section" id="Skills">
                 <p className='section_title'>Skills</p>
+                <div className='skills_section'>
+                    <div className='skills_sub_section'>
+                        
+                        <VictoryChart
+                            domainPadding={{ x: [20, 20] }}
+                            wdith={'100%'}
+                            padding={{ left: 80}}
+                        >
+                            <VictoryBar 
+                                horizontal
+                                data={[{ x: 'Javascript', y: 8 }]}
+                                style={{ data: { fill: "#FFFF" }, labels: { fill: "white", fontSize: 10} }}
+                                barWidth={30}
+                                labels={({ datum }) => datum.y}
+                                labelComponent={<VictoryLabel/>}
+                            />
+                            <VictoryBar
+                                horizontal
+                                data={[{ x: 'CSS', y: 6 }]}
+                                style={{ data: { fill: "#FFFF" }, labels: { fill: "white", fontSize: 10} }}
+                                barWidth={30}
+                                labels={({ datum }) => datum.y}
+                                labelComponent={<VictoryLabel/>}
+                            />
+                            <VictoryBar
+                                horizontal
+                                data={[{ x: 'SQL', y: 6 }]}
+                                style={{ data: { fill: "#FFFF" }, labels: { fill: "white", fontSize: 10} }}
+                                barWidth={30}
+                                labels={({ datum }) => datum.y}
+                                labelComponent={<VictoryLabel/>}
+                            />
+                            <VictoryBar
+                                horizontal
+                                data={[{ x: 'Python', y: 8 }]}
+                                style={{ data: { fill: "#FFFF" }, labels: { fill: "white", fontSize: 10} }}
+                                barWidth={30}
+                                labels={({ datum }) => datum.y}
+                                labelComponent={<VictoryLabel/>}
+                            />
+                            <VictoryBar
+                                horizontal
+                                data={[{ x: 'PLC Prog.', y: 7 }]}
+                                style={{ data: { fill: "#FFFF" }, labels: { fill: "white", fontSize: 10} }}
+                                barWidth={30}
+                                labels={({ datum }) => datum.y}
+                                labelComponent={<VictoryLabel/>}
+                            />
+                            <VictoryAxis 
+                                dependentAxis
+                                tickValues={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
+                                style={{
+                                    axis: {
+                                        stroke: 'white'  //CHANGE COLOR OF X-AXIS
+                                    },
+                                    tickLabels: {
+                                        fill: 'white', //CHANGE COLOR OF X-AXIS LABELS
+                                        fontSize: 10
+                                    },
+                                    axisLabel: {
+                                        stroke: 'white',  //CHANGE COLOR OF X-AXIS
+                                        fontSize: 20,
+                                        padding: 35
+                                    },
+                                    label: {
+                                        fontSize: 10
+                                    }
+                                }}
+                                />
+                            <VictoryAxis 
+                                tickValues={['Javascript', 'CSS', 'SQL', 'Python', 'PLC Prog.']}
+                                style={{
+                                    axis: {
+                                        stroke: 'white'  //CHANGE COLOR OF X-AXIS
+                                    },
+                                    tickLabels: {
+                                        fill: 'white', //CHANGE COLOR OF X-AXIS LABELS
+                                        fontSize: 10,
+                                        padding: 28
+                                    }, 
+                                }}
+                                />
+                        </VictoryChart>
+                    </div>
+                    <div className='skills_sub_section'>
+                    <VictoryChart
+                            domainPadding={{ x: [20, 20] }}
+                            wdith={'100%'}
+                            padding={{ left: 80}}
+                        >
+                            <VictoryBar 
+                                horizontal
+                                data={[{ x: 'Javascript', y: 8 }]}
+                                style={{ data: { fill: "#FFFF" }, labels: { fill: "white", fontSize: 10} }}
+                                barWidth={30}
+                                labels={({ datum }) => datum.y}
+                                labelComponent={<VictoryLabel/>}
+                            />
+                            <VictoryBar
+                                horizontal
+                                data={[{ x: 'CSS', y: 6 }]}
+                                style={{ data: { fill: "#FFFF" }, labels: { fill: "white", fontSize: 10} }}
+                                barWidth={30}
+                                labels={({ datum }) => datum.y}
+                                labelComponent={<VictoryLabel/>}
+                            />
+                            <VictoryBar
+                                horizontal
+                                data={[{ x: 'SQL', y: 6 }]}
+                                style={{ data: { fill: "#FFFF" }, labels: { fill: "white", fontSize: 10} }}
+                                barWidth={30}
+                                labels={({ datum }) => datum.y}
+                                labelComponent={<VictoryLabel/>}
+                            />
+                            <VictoryBar
+                                horizontal
+                                data={[{ x: 'Python', y: 8 }]}
+                                style={{ data: { fill: "#FFFF" }, labels: { fill: "white", fontSize: 10} }}
+                                barWidth={30}
+                                labels={({ datum }) => datum.y}
+                                labelComponent={<VictoryLabel/>}
+                            />
+                            <VictoryBar
+                                horizontal
+                                data={[{ x: 'PLC Prog.', y: 7 }]}
+                                style={{ data: { fill: "#FFFF" }, labels: { fill: "white", fontSize: 10} }}
+                                barWidth={30}
+                                labels={({ datum }) => datum.y}
+                                labelComponent={<VictoryLabel/>}
+                            />
+                            <VictoryAxis 
+                                dependentAxis
+                                tickValues={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
+                                style={{
+                                    axis: {
+                                        stroke: 'white'  //CHANGE COLOR OF X-AXIS
+                                    },
+                                    tickLabels: {
+                                        fill: 'white', //CHANGE COLOR OF X-AXIS LABELS
+                                        fontSize: 10
+                                    },
+                                    axisLabel: {
+                                        stroke: 'white',  //CHANGE COLOR OF X-AXIS
+                                        fontSize: 20,
+                                        padding: 35
+                                    },
+                                    label: {
+                                        fontSize: 10
+                                    }
+                                }}
+                                />
+                            <VictoryAxis 
+                                tickValues={['Javascript', 'CSS', 'SQL', 'Python', 'PLC Prog.']}
+                                style={{
+                                    axis: {
+                                        stroke: 'white'  //CHANGE COLOR OF X-AXIS
+                                    },
+                                    tickLabels: {
+                                        fill: 'white', //CHANGE COLOR OF X-AXIS LABELS
+                                        fontSize: 10,
+                                        padding: 28
+                                    }, 
+                                }}
+                                />
+                        </VictoryChart>
+                    </div>
+                </div>
             </div>
             <div className="section" id="Experience">
             <p className='section_title'>Experience</p>
