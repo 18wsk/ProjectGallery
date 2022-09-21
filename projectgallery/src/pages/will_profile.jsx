@@ -17,8 +17,8 @@ function Home() {
         <>
         <TopNavigation/>
         <BackgroundParticles/>
-        <div className='container'>
-            <div className="section" id="Home">
+        <div className="container">
+            <div className="home_section" id="Home">
                 <div className='home_page'>
                     <div className='sub_section'>
                         <div className='sub_section'>

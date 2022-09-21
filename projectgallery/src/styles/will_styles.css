@@ -201,6 +201,19 @@ img.about_image {
     font-family: 'Courier New', monospace;
 }
 
+.home_section {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
 .home_page {
     display: flex;
     align-items: center;

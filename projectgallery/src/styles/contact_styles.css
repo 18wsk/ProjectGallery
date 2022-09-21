@@ -3,7 +3,7 @@ div.bg {
     height: 100%;
 }
 
-div.container {
+div.contact_container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,6 +11,40 @@ div.container {
     height: 100%;
 }
 
-div.form {
-    
+p.form_title {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-left: 32px;
+    font-size: 300%;
+}
+
+div.contact_form_container {
+    background-color: #000000;
+    height: 80vh;
+    width: 67%;
+    border-radius: 25px;
+    border: 1px solid #FFFF
+}
+
+form.form {
+    height: 100%;
+    width: 100%;
+}
+
+button.submit_button {
+    width: 33%;
+    border-radius: 25px;
+}
+
+div.submit_container {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: absolute;
+    bottom: 0;
+    left:  0;
+
 }
