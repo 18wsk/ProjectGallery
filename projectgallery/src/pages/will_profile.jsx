@@ -84,14 +84,6 @@ function Home() {
             </div>
             <div className="section" id="Skills">
                 <p className='section_title'>Skills</p>
-                <div className='graph_title_container'>
-                    <div>
-                        <p className='graph_title'>Hard Skills</p>
-                    </div>
-                    <div>
-                        <p className='graph_title'>Soft Skills</p>
-                    </div>
-                </div>
                 <div className='skills_section'>
                     <div className='skills_sub_section'>
                         <VictoryChart
@@ -142,6 +134,7 @@ function Home() {
                             <VictoryAxis 
                                 dependentAxis
                                 tickValues={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
+                                label='Hard Skills'
                                 style={{
                                     axis: {
                                         stroke: 'white'  //CHANGE COLOR OF X-AXIS
@@ -224,6 +217,7 @@ function Home() {
                             <VictoryAxis 
                                 dependentAxis
                                 tickValues={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
+                                label='Soft Skills'
                                 style={{
                                     axis: {
                                         stroke: 'white'  //CHANGE COLOR OF X-AXIS
@@ -286,9 +280,10 @@ function Home() {
                         <div className="center">
                             <p className='work_text'>
                                 I currently work at CarbonGraph, a Toronto based startup that is trying to make a mark in the carbon footprint
-                                mapping market. I work as the lead frontend developer, I have gained great API, AWS and web developer fundamentals.
+                                mapping market. I work as the lead frontend developer, I have gained great API, AWS and web developer fundamentals
+                                such as JS, CSS and TS.
                                 
-                                My latest work includes a complete overhaul of the frontend graph system that leverages openLCA open source data to 
+                                My latest work includes a complete overhaul of the frontend graph system that leverages openLCA's open-source database to 
                                 help create a better user experience and more accurate carbon footprint estimates.
                             </p>
                         </div>

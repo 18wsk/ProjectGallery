@@ -260,6 +260,13 @@ div.full {
     color: white;
     text-align: left;
     z-index: 1;
-    font-size: 24px;
-    padding: 4px
+    font-size: 18px;
+    padding: 6px;
+}
+
+
+.center {
+    border-radius: 25px;
+    border: 1px solid #FFFF;
+    background-color: #000000;
 }
