@@ -1,0 +1,81 @@
+div.bg {
+    width: 100%;
+    height: 100%;
+}
+
+div.contact_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+}
+
+p.form_title {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-left: 32px;
+    font-size: 300%;
+}
+
+div.contact_form_container {
+    background-color: #000000;
+    height: max-content;
+    width: 67%;
+    border-radius: 25px;
+    border: 1px solid #FFFF
+}
+
+form.form {
+    height: 100%;
+    width: 100%;
+}
+
+button.submit_button {
+    width: 300px;
+    border-radius: 25px;
+    height: 32px;
+}
+
+.submit_button:hover {
+    background-color: #0000;
+    border-color: #FFFF;
+    color: white;
+}
+
+div.submit_container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label.form_label {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-left: 32px;
+    font-size: 24px;
+}
+
+textarea {
+    width: 300px;
+    height: 150px;
+}
+
+div.form_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input.form_input {
+    width: 300px;
+    height: 24px;
+    padding-top: 4px;
+}

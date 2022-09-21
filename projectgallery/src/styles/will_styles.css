@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
 img.circleprofile {
     border-radius: 50%;
     display: block;
@@ -6,12 +10,23 @@ img.circleprofile {
     width: auto;
 }
 
-div.background {
-    width: 100%;
-    height: 100%;
+div.section {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
     overflow-y: auto;
     overflow-x: hidden;
-    z-index: 1
+    z-index: 1;
+    padding-top: 2rem;
+    scroll-snap-align: start;
+}
+
+div.container{
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
 div.full {
@@ -38,16 +53,9 @@ div.text-griddy {
     justify-items: center;
 }
 
-div.section {
+div.sub_section {
     justify-content: center;
-}
-
-div.text-section {
-    justify-content: center;
-    background-color: white;
-    border: 8px solid #c603fc;
-    width: 80%;
-    padding: 4px;
+    z-index: 2;
 }
 
 .name {
@@ -60,14 +68,12 @@ div.text-section {
 p {
     font-family: 'Courier New', monospace;
     font-weight: bold;
-}
-
-div.ineedspace {
-    padding-right: 20px;
+    color: white;
+    text-align: center;
 }
 
 .tsparticles {
-    z-index: -1;
+    z-index: -4;
     position: fixed;
     width: 100%;
 }
@@ -100,4 +106,167 @@ div.socials-container {
     display: flex;
     align-items: center;
     justify-content: center;    
+}
+
+.map {
+    z-index: 30;
+    width: 700px;
+}
+
+.work_section {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    width: 100%;
+    height: 100%;
+    justify-items: left;
+}
+
+p.section_title {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    margin: 0;
+    padding-left: 10px;
+    font-size: 300%;
+}
+
+.about_grid {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 32px;
+    width: 100%;
+    height: 75%;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    overflow: hidden;
+    position: absolute;
+}
+
+.about_button {
+    width: 100%;
+    height: 100%;
+    transition: 500ms;
+    background-color: transparent;
+    position: relative;
+}
+
+.about_button:hover{
+    transform: TranslateY(-100%)
+}
+
+div.about_section {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+img.about_image {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+    border-radius: 25px;
+}
+
+.about_text {
+    color: white;
+    text-align: left;
+    z-index: 1;
+    background-color: black;
+}
+
+.skills_section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    width: 100%;
+    height: 75%;
+    justify-items: left;
+}
+
+.skills_sub_section {
+    width: 75%;
+    height: 100%;
+    margin: auto;
+}
+
+.skills_title {
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+}
+
+.home_section {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.home_page {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.graph_title_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    justify-content: center;
+    z-index: 10;
+    background-color: #0000;
+}
+
+p.graph_title {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 200%;
+}
+
+div.work_images {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-gap: 16px;
+    height: 80%;
+    width: 80%;
+}
+
+div.full {
+    width: 100%;
+    height: 100%;
+}
+
+.gg {
+    display: relative;
+}
+
+.work_text {
+    color: white;
+    text-align: left;
+    z-index: 1;
+    font-size: 18px;
+    padding: 6px;
+}
+
+
+.center {
+    border-radius: 25px;
+    border: 1px solid #FFFF;
+    background-color: #000000;
 }

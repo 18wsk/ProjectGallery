@@ -7,13 +7,18 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "emailjs": "^4.0.1",
+    "emailjs-com": "^3.2.0",
     "postcss-normalize": "^10.0.1",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-particles": "^2.1.4",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "react-simple-maps": "^3.0.0",
     "tsparticles": "^2.1.4",
+    "victory": "^36.6.7",
+    "victory-label": "^1.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
